@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-线性结构1 两个有序链表序列的合并", "02-线性结构1 两个有序链表序列的合并\02-线性结构1 两个有序链表序列的合并.vcxproj", "{2D2495B2-5B93-4AB7-8A8B-BEFD746A1DC0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-线性结构2 一元多项式的乘法与加法运算", "02-线性结构2 一元多项式的乘法与加法运算\02-线性结构2 一元多项式的乘法与加法运算.vcxproj", "{0BC86E7F-3574-4DAB-AC5B-D99238D19F9E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-线性结构3 Reversing Linked List", "02-线性结构3 Reversing Linked List\02-线性结构3 Reversing Linked List.vcxproj", "{B0B9B729-67C5-49F1-926E-FF877C5A2F34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D2495B2-5B93-4AB7-8A8B-BEFD746A1DC0}.Debug|x64.ActiveCfg = Debug|x64
+		{2D2495B2-5B93-4AB7-8A8B-BEFD746A1DC0}.Debug|x64.Build.0 = Debug|x64
+		{2D2495B2-5B93-4AB7-8A8B-BEFD746A1DC0}.Debug|x86.ActiveCfg = Debug|Win32
+		{2D2495B2-5B93-4AB7-8A8B-BEFD746A1DC0}.Debug|x86.Build.0 = Debug|Win32
+		{2D2495B2-5B93-4AB7-8A8B-BEFD746A1DC0}.Release|x64.ActiveCfg = Release|x64
+		{2D2495B2-5B93-4AB7-8A8B-BEFD746A1DC0}.Release|x64.Build.0 = Release|x64
+		{2D2495B2-5B93-4AB7-8A8B-BEFD746A1DC0}.Release|x86.ActiveCfg = Release|Win32
+		{2D2495B2-5B93-4AB7-8A8B-BEFD746A1DC0}.Release|x86.Build.0 = Release|Win32
+		{0BC86E7F-3574-4DAB-AC5B-D99238D19F9E}.Debug|x64.ActiveCfg = Debug|x64
+		{0BC86E7F-3574-4DAB-AC5B-D99238D19F9E}.Debug|x64.Build.0 = Debug|x64
+		{0BC86E7F-3574-4DAB-AC5B-D99238D19F9E}.Debug|x86.ActiveCfg = Debug|Win32
+		{0BC86E7F-3574-4DAB-AC5B-D99238D19F9E}.Debug|x86.Build.0 = Debug|Win32
+		{0BC86E7F-3574-4DAB-AC5B-D99238D19F9E}.Release|x64.ActiveCfg = Release|x64
+		{0BC86E7F-3574-4DAB-AC5B-D99238D19F9E}.Release|x64.Build.0 = Release|x64
+		{0BC86E7F-3574-4DAB-AC5B-D99238D19F9E}.Release|x86.ActiveCfg = Release|Win32
+		{0BC86E7F-3574-4DAB-AC5B-D99238D19F9E}.Release|x86.Build.0 = Release|Win32
+		{B0B9B729-67C5-49F1-926E-FF877C5A2F34}.Debug|x64.ActiveCfg = Debug|x64
+		{B0B9B729-67C5-49F1-926E-FF877C5A2F34}.Debug|x64.Build.0 = Debug|x64
+		{B0B9B729-67C5-49F1-926E-FF877C5A2F34}.Debug|x86.ActiveCfg = Debug|Win32
+		{B0B9B729-67C5-49F1-926E-FF877C5A2F34}.Debug|x86.Build.0 = Debug|Win32
+		{B0B9B729-67C5-49F1-926E-FF877C5A2F34}.Release|x64.ActiveCfg = Release|x64
+		{B0B9B729-67C5-49F1-926E-FF877C5A2F34}.Release|x64.Build.0 = Release|x64
+		{B0B9B729-67C5-49F1-926E-FF877C5A2F34}.Release|x86.ActiveCfg = Release|Win32
+		{B0B9B729-67C5-49F1-926E-FF877C5A2F34}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
