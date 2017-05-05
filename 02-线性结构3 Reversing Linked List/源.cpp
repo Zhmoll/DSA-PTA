@@ -2,66 +2,82 @@
 #include <stdlib.h>
 
 struct node {
-    int address;
     int data;
-    int nextAddress;
-    struct node* prec;
-    struct node* next;
+    int next;
 };
 
-struct stack {
-    int size;
-    struct node* top;
-};
+int q1[100005];
+int q2[100005];
+int q1_size = 0;
+int q2_size = 0;
 
-void push(struct stack* s, struct node* n) {
-    if (s->top)    s->top->prec = n;
-    n->next = s->top;
-    n->prec = NULL;
-    s->top = n;
-    s->size++;
+void enqueue(int address, int q) {
+    if (q == 1) {
+        q1[q1_size] = address;
+        q1_size++;
+    }
+    if (q == 2) {
+        q2[q2_size] = address;
+        q2_size++;
+    }
 }
 
-struct node* pop(struct stack* s) {
-    struct node* tmp = s->top;
-    s->top = s->top->next;
-    s->size--;
-    return tmp;
+int stack[100005];
+int stack_size = 0;
+
+void push(int address) {
+    stack[stack_size] = address;
+    stack_size++;
+}
+
+int pop() {
+    int result = stack[stack_size - 1];
+    stack_size--;
+    return result;
 }
 
 int main() {
-    int firstNodeAddress;
-    int total;
-    int reverseCount;
-    struct node* arr[100001] = { 0 };
-    int address;
+    int start, total, reverse;
+    struct node arr[100000] = { -1,-1 };
 
-    scanf("%d %d %d", &firstNodeAddress, &total, &reverseCount);
+    scanf("%d %d %d", &start, &total, &reverse);
+
+    int tmp_address, tmp_data, tmp_next;
 
     for (int i = 0; i < total; i++) {
-        struct node* tmp = (struct node*)malloc(sizeof(struct node));
-        scanf("%d %d %d", &(tmp->address), &(tmp->data), &(tmp->nextAddress));
-        arr[tmp->address] = tmp;
+        scanf("%d %d %d", &tmp_address, &tmp_data, &tmp_next);
+        arr[tmp_address].data = tmp_data;
+        arr[tmp_address].next = tmp_next;
     }
 
-    struct stack s = { 0,NULL };
-    int p_address = firstNodeAddress;
-    for (int i = 0; i < total; i++) {
-        if (s.size < reverseCount) {
-            // Èë
-            push(&s, arr[p_address]);
-            p_address = arr[p_address]->nextAddress;
+    tmp_address = start;
+    int size = 0;
+    while (tmp_address != -1) {
+        enqueue(tmp_address, 1);
+        tmp_address = arr[tmp_address].next;
+        size++;
+    }
+
+    for (int i = 0; i < size; i++) {
+        push(q1[i]);
+        if (stack_size < reverse)
+            continue;
+        while (stack_size != 0) {
+            enqueue(pop(), 2);
+        }
+    }
+
+    for (int i = 0; i < stack_size; i++) {
+        enqueue(stack[i], 2);
+    }
+
+    for (int i = 0; i < size; i++) {
+        if (i + 1 == size) {
+            printf("%05d %d -1", q2[i], arr[q2[i]].data);
         }
         else {
-            // ³ö
-            while (s.size != 0) {
-                printf("%05d %d %05d\n", s.top->address, s.top->data, s.top->nextAddress);
-                pop(&s);
-            }
+            printf("%05d %d %05d\n", q2[i], arr[q2[i]].data, q2[i + 1]);
         }
     }
-    while (s.size != 0) {
-        printf("%05d %d %05d\n", s.top->address, s.top->data, s.top->nextAddress);
-        pop(&s);
-    }
+    return 0;
 }
