@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-复杂度1 最大子列�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-复杂度2 Maximum Subsequence Sum", "01-复杂度2 Maximum Subsequence Sum\01-复杂度2 Maximum Subsequence Sum.vcxproj", "{234B12EB-1BD8-43FC-BD83-82F285B6E059}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-线性结构4 Pop Sequence", "02-线性结构4 Pop Sequence\02-线性结构4 Pop Sequence.vcxproj", "{B8295599-E24A-4334-82A2-FABAEADB0FC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{234B12EB-1BD8-43FC-BD83-82F285B6E059}.Release|x64.Build.0 = Release|x64
 		{234B12EB-1BD8-43FC-BD83-82F285B6E059}.Release|x86.ActiveCfg = Release|Win32
 		{234B12EB-1BD8-43FC-BD83-82F285B6E059}.Release|x86.Build.0 = Release|Win32
+		{B8295599-E24A-4334-82A2-FABAEADB0FC8}.Debug|x64.ActiveCfg = Debug|x64
+		{B8295599-E24A-4334-82A2-FABAEADB0FC8}.Debug|x64.Build.0 = Debug|x64
+		{B8295599-E24A-4334-82A2-FABAEADB0FC8}.Debug|x86.ActiveCfg = Debug|Win32
+		{B8295599-E24A-4334-82A2-FABAEADB0FC8}.Debug|x86.Build.0 = Debug|Win32
+		{B8295599-E24A-4334-82A2-FABAEADB0FC8}.Release|x64.ActiveCfg = Release|x64
+		{B8295599-E24A-4334-82A2-FABAEADB0FC8}.Release|x64.Build.0 = Release|x64
+		{B8295599-E24A-4334-82A2-FABAEADB0FC8}.Release|x86.ActiveCfg = Release|Win32
+		{B8295599-E24A-4334-82A2-FABAEADB0FC8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
