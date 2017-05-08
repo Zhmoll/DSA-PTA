@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node {
+struct TreeNode {
     int data;
     int next;
 };
@@ -38,7 +38,7 @@ int pop() {
 
 int main() {
     int start, total, reverse;
-    struct node arr[100000] = { -1,-1 };
+    struct TreeNode arr[100000] = { -1,-1 };
 
     scanf("%d %d %d", &start, &total, &reverse);
 
